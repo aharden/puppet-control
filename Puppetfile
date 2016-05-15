@@ -44,7 +44,7 @@ mod 'git',
   :git => 'https://github.com/puppetlabs/puppetlabs-git.git'
 
 mod 'make',
-  :git => 'https://github.com/Element84/puppet-make.git'
+  :git => 'https://github.com/croddy/puppet-make.git'
 
 # Puppetforge modules
 mod 'java',
