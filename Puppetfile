@@ -47,10 +47,6 @@ mod 'make',
   :git => 'https://github.com/Element84/puppet-make.git'
 
 # Puppetforge modules
-mod 'r10k',
-  :git => 'https://github.com/acidprime/r10k.git',
-  :ref => 'v2.2.1'
-
 mod 'java',
   :git => 'https://github.com/puppetlabs/puppetlabs-java.git'
 
