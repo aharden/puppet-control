@@ -3,8 +3,8 @@
 # classes. This makes your code less messy
 # and follows puppet best practices.
 class profile::puppet::params {
-  $hieradir = '"/etc/puppetlabs/puppet/environments/%{::environment}/hieradata"'
-  $environmentpath = "${::settings::confdir}/environments"
+  $hieradir = '"/etc/puppetlabs/code/environments/%{::environment}/hieradata"'
+  $environmentpath = "${::settings::codedir}/environments"
   case $::settings::server {
     'xmaster.vagrant.vm': {
       $remote = '/vagrant'
