@@ -35,15 +35,6 @@ class profile::puppet::master (
     }
   }
 
-  ini_setting { 'basemodulepath':
-    ensure  => 'present',
-    path    => "${::settings::confdir}/puppet.conf",
-    section => 'main',
-    setting => 'basemodulepath',
-    value   => $profile::puppet::params::basemodulepath,
-    notify  => Service['pe-puppetserver'],
-  }
-
   ini_setting { 'environmentpath':
     ensure  => 'present',
     path    => "${::settings::confdir}/puppet.conf",
